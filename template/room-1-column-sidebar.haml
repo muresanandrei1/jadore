@@ -1,0 +1,369 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %title Corsiva - Responsive Hotel Website Template
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    / LOAD CSS FILES
+    %link{:href => "css/main.css", :rel => "stylesheet", :type => "text/css"}/
+  %body
+    / header begin
+    %header
+      / logo begin
+      #logo
+        .inner
+          %a{:href => "index.html"}
+            %img{:alt => "", :src => "img/logo.png"}/
+      / logo close
+      / mainmenu begin
+      #mainmenu-container
+        %ul#mainmenu
+          %li
+            %a{:href => "index.html"} Home
+            %ul
+              %li
+                %a{:href => "index.html"} Homepage 1
+              %li
+                %a{:href => "index-2.html"} Homepage 2
+          %li
+            %a{:href => "explore.html"} Explore
+          %li
+            %a{:href => "room-list.html"} Room
+            %ul
+              %li
+                %a{:href => "room-1-column.html"} 1 Column
+              %li
+                %a{:href => "room-1-column-sidebar.html"} 1 Column + Sidebar
+              %li
+                %a{:href => "room-2-columns.html"} 2 Column
+              %li
+                %a{:href => "room-2-columns-sidebar.html"} 2 Columns + Sidebar
+              %li
+                %a{:href => "room-3-columns.html"} 3 Columns
+              %li
+                %a{:href => "single-room.html"} Single Room
+          %li
+            %a{:href => "booking.html"} Booking
+          %li
+            %a{:href => "news.html"} News
+            %ul
+              %li
+                %a{:href => "news.html"} News List
+              %li
+                %a{:href => "single-news.html"} Single News
+          %li
+            %a{:href => "gallery.html"} Gallery
+          %li
+            %a{:href => "contact.html"} Contact
+      / mainmenu close
+      #menu-btn
+    / header close
+    / subheader begin
+    #subheader
+      %h1 The Room
+      %h3 Modern &amp; Spaciuos
+    / subheader close
+    / content begin
+    #content
+      .container
+        .row
+          .col-md-8
+            / room begin
+            .room-item-alt
+              .col-md-5
+                %img{:alt => "", :src => "img/room/pic (1).jpg"}/
+              .col-md-4
+                .desc
+                  %a{:href => "#"}
+                    %h1 Deluxe Room
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              .col-md-3.text-center
+                .price
+                  $199
+                  %span /night
+                %a.btn-border{:href => "single-room.html"} View Details
+              .clearfix
+            / room close
+            / room begin
+            .room-item-alt
+              .col-md-5
+                %img{:alt => "", :src => "img/room/pic (2).jpg"}/
+              .col-md-4
+                .desc
+                  %a{:href => "#"}
+                    %h1 Luxury Room
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              .col-md-3.text-center
+                .price
+                  $299
+                  %span /night
+                %a.btn-border{:href => "single-room.html"} View Details
+              .clearfix
+            / room close
+            / room begin
+            .room-item-alt
+              .col-md-5
+                %img{:alt => "", :src => "img/room/pic (1).jpg"}/
+              .col-md-4
+                .desc
+                  %a{:href => "#"}
+                    %h1 Premier Room
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              .col-md-3.text-center
+                .price
+                  $399
+                  %span /night
+                %a.btn-border{:href => "single-room.html"} View Details
+              .clearfix
+            / room close
+            / room begin
+            .room-item-alt
+              .col-md-5
+                %img{:alt => "", :src => "img/room/pic (1).jpg"}/
+              .col-md-4
+                .desc
+                  %a{:href => "#"}
+                    %h1 Deluxe Suite
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              .col-md-3.text-center
+                .price
+                  $499
+                  %span /night
+                %a.btn-border{:href => "single-room.html"} View Details
+              .clearfix
+            / room close
+            / room begin
+            .room-item-alt
+              .col-md-5
+                %img{:alt => "", :src => "img/room/pic (5).jpg"}/
+              .col-md-4
+                .desc
+                  %a{:href => "#"}
+                    %h1 Luxury Suite
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              .col-md-3.text-center
+                .price
+                  $599
+                  %span /night
+                %a.btn-border{:href => "single-room.html"} View Details
+              .clearfix
+            / room close
+            / room begin
+            .room-item-alt
+              .col-md-5
+                %img{:alt => "", :src => "img/room/pic (6).jpg"}/
+              .col-md-4
+                .desc
+                  %a{:href => "#"}
+                    %h1 Premier Suite
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+              .col-md-3.text-center
+                .price
+                  $699
+                  %span /night
+                %a.btn-border{:href => "single-room.html"} View Details
+              .clearfix
+            / room close
+          #sidebar.col-md-4
+            .widget.latest_news
+              %h3 Latest News
+              %ul.bloglist-small
+                %li
+                  .date-box
+                    %span.day 28
+                    %span.month SEP
+                  .txt
+                    %h5
+                      %a{:href => "css/#"} Lorem ipsum sit amet
+                    %div
+                      %div Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                %li
+                  .date-box
+                    %span.day 26
+                    %span.month SEP
+                  .txt
+                    %h5
+                      %a{:href => "css/#"} Lorem ipsum sit amet
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                %li
+                  .date-box
+                    %span.day 18
+                    %span.month SEP
+                  .txt
+                    %h5
+                      %a{:href => "css/#"} Lorem ipsum sit amet
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            / widget category
+            .widget.widget_category
+              %h3
+                %span Category
+              %ul
+                %li
+                  %a{:href => "#"}
+                    %i.icon-folder-close>
+                    Promotion
+                %li
+                  %a{:href => "#"}
+                    %i.icon-folder-close>
+                    Favorite Menu
+                %li
+                  %a{:href => "#"}
+                    %i.icon-folder-close>
+                    Restaurant
+                %li
+                  %a{:href => "#"}
+                    %i.icon-folder-close>
+                    Event
+                %li
+                  %a{:href => "#"}
+                    %i.icon-folder-close>
+                    Promotion
+            / widget tags
+            .widget.widget_tags
+              %h3
+                %span Tags
+              %ul
+                %li
+                  %a{:href => "#link"} hotel
+                %li
+                  %a{:href => "#link"} responsive
+                %li
+                  %a{:href => "#link"} css3
+                %li
+                  %a{:href => "#link"} html5
+                %li
+                  %a{:href => "#link"} website
+                %li
+                  %a{:href => "#link"} template
+                %li
+                  %a{:href => "#link"} elegant
+                %li
+                  %a{:href => "#link"} clean
+                %li
+                  %a{:href => "#link"} jquery
+                %li
+                  %a{:href => "#link"} php
+                %li
+                  %a{:href => "#link"} html
+                %li
+                  %a{:href => "#link"} css
+            / widget text
+            .widget.widget-text
+              %h3 Our Address
+              .map-small
+                %iframe{:frameborder => "0", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://maps.google.co.id/maps?f=q&source=s_q&hl=en&q=16+Riverside+Rd,+Singapore&sll=-2.547988,118.037109&sspn=29.394918,50.756836&ie=UTF8&geocode=Fb8IFgAdu40vBg&split=0&hq=&hnear=16+Riverside+Rd,+Singapore&ll=1.444031,103.779771&spn=0.014522,0.024784&t=m&z=14&output=embed&iwloc=false"}
+              %address
+                %span 20 Main Street, Melbourne
+                %span
+                  %strong> Phone:
+                  (200) 333 8890
+                %span
+                  %strong> Fax:
+                  (200) 333 8892
+                %span
+                  %strong Email:
+                  %a{:href => "mailto:contact@example.com"} contact@example.com
+                %span
+                  %strong Web:
+                  %a{:href => "#test"} http://example.com
+    / content close
+    / footer begin
+    %footer
+      .container
+        .row
+          .col-md-4
+            %h3 About Us
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          .col-md-4
+            %h3 Latest News
+            %ul.bloglist-small
+              %li
+                .date-box
+                  %span.day 28
+                  %span.month SEP
+                .txt
+                  %h5
+                    %a{:href => "css/#"} Lorem ipsum sit amet
+                  %div
+                    %div Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              %li
+                .date-box
+                  %span.day 26
+                  %span.month SEP
+                .txt
+                  %h5
+                    %a{:href => "css/#"} Lorem ipsum sit amet
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            .clearfix
+          .col-md-4
+            %h3 Our Address
+            %address
+              %span 20 Main Street, Melbourne
+              %span
+                %strong> Phone:
+                (200) 333 8890
+              %span
+                %strong> Fax:
+                (200) 333 8892
+              %span
+                %strong Email:
+                %a{:href => "mailto:contact@example.com"} contact@example.com
+              %span
+                %strong Web:
+                %a{:href => "#test"} http://example.com
+            .social-icons
+              %a{:href => "#"}
+                %img{:alt => "", :src => "img/social-icons/facebook.png"}/
+              %a{:href => "#"}
+                %img{:alt => "", :src => "img/social-icons/twitter.png"}/
+              %a{:href => "#"}
+                %img{:alt => "", :src => "img/social-icons/dribbble.png"}/
+              %a{:href => "#"}
+                %img{:alt => "", :src => "img/social-icons/blogger.png"}/
+              %a{:href => "#"}
+                %img{:alt => "", :src => "img/social-icons/youtube.png"}/
+              %a{:href => "#"}
+                %img{:alt => "", :src => "img/social-icons/vimeo.png"}/
+      .subfooter
+        .container
+          .row
+            .col-md-6
+              © Copyright 2015 - Corsiva by Liontheme
+            .col-md-6
+              %nav
+                %ul
+                  %li
+                    %a{:href => "#"} Home
+                  %li
+                    %a{:href => "#"} About Us
+                  %li
+                    %a{:href => "#"} Booking
+                  %li
+                    %a{:href => "#"} News
+                  %li
+                    %a{:href => "#"} Contact Us
+    / footer close
+    / LOAD JS FILES
+    %script{:src => "js/jquery.min.js"}
+    %script{:src => "js/bootstrap.min.js"}
+    %script{:src => "js/jquery.isotope.min.js"}
+    %script{:src => "js/jquery.prettyPhoto.js"}
+    %script{:src => "js/easing.js"}
+    %script{:src => "js/jquery.lazyload.js"}
+    %script{:src => "js/jquery.ui.totop.js"}
+    %script{:src => "js/selectnav.js"}
+    %script{:src => "js/ender.js"}
+    %script{:src => "js/responsiveslides.min.js"}
+    %script{:src => "js/jquery.flexslider-min.js"}
+    %script{:src => "js/bootstrap-datepicker.js"}
+    %script{:src => "js/owl.carousel.min.js"}
+    %script{:src => "js/custom.js"}
