@@ -1,16 +1,16 @@
 @charset "utf-8";
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 /* Import font
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700);
 @import url(http://fonts.googleapis.com/css?family=Antic+Slab);
 @import url(http://fonts.googleapis.com/css?family=Merriweather:300italic,400italic,400,300,700,700italic,900,900italic);
 @import url(http://fonts.googleapis.com/css?family=Cinzel:400,700,900);
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 /* Table of content
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 body
 header
 subheader
@@ -32,9 +32,9 @@ elements
 	icon box
 	map
 misc
-	
-	
-/*- - - - - - - - - - - - - - - - - - - - 
+
+
+/*- - - - - - - - - - - - - - - - - - - -
 	BODY
 - - - - - - - - - - - - - - - - - - - - */
 body {
@@ -47,7 +47,11 @@ body {
     background:#fff
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+.clearfix {
+  clear: both;
+}
+
+/*- - - - - - - - - - - - - - - - - - - -
 	HEADER
 - - - - - - - - - - - - - - - - - - - - */
 header {
@@ -83,7 +87,7 @@ header #logo .inner {
     display:inline-block
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 	SUBHEADER
 - - - - - - - - - - - - - - - - - - - - */
 #subheader {
@@ -115,7 +119,7 @@ header #logo .inner {
     font-size:16px
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 	NAVIGATION
 - - - - - - - - - - - - - - - - - - - - */
 #mainmenu-container {
@@ -294,7 +298,7 @@ header #logo .inner {
     background:#222
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 	ELEMENTS
 - - - - - - - - - - - - - - - - - - - - */
 /* address */
@@ -606,7 +610,7 @@ h3 {
 	margin-right:auto;
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 map
 - - - - - - - - - - - - - - - - - - - - */
 .map {
@@ -631,7 +635,7 @@ map
     height:200px
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 /* link
 /*- - - - - - - - - - - - - - - - - - - - */
 a {
@@ -713,7 +717,7 @@ footer a:hover {
     width:100%
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 /* content
 /*- - - - - - - - - - - - - - - - - - - - */
 #content {
@@ -728,7 +732,7 @@ footer a:hover {
     padding-bottom:0!important
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 	SECTION
 /*- - - - - - - - - - - - - - - - - - - - */
 section {
@@ -786,7 +790,7 @@ section.dark {
     padding:40px 0
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 	room
 - - - - - - - - - - - - - - - - - - - - */
 .room {
@@ -965,7 +969,7 @@ border:none;
 margin:0; padding-left:0;
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 	CONTACT
 /*- - - - - - - - - - - - - - - - - - - - */
 .error {
@@ -1035,7 +1039,7 @@ margin:0; padding-left:0;
     padding:10px 20px
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 	BOOKING
 /*- - - - - - - - - - - - - - - - - - - - */
 #booking {
@@ -1094,7 +1098,7 @@ select.error_input {
     border-color:#C03
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 	FOOTER
 /*- - - - - - - - - - - - - - - - - - - - */
 footer {
@@ -1128,7 +1132,7 @@ footer h3 {
     margin-top:20px
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 jquery toTop
 - - - - - - - - - - - - - - - - - - - - */
 #toTop {
@@ -1159,7 +1163,7 @@ jquery toTop
     outline:none
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 widget
 - - - - - - - - - - - - - - - - - - - - */
 .widget {
@@ -1293,7 +1297,7 @@ widget
     color:#666
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 /* blog */
 /*- - - - - - - - - - - - - - - - - - - - */
 .blog-list {
@@ -1396,7 +1400,7 @@ widget
     margin-bottom:-35px
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 /* blog single */
 /*- - - - - - - - - - - - - - - - - - - - */
 .blog-read {
@@ -1626,7 +1630,7 @@ widget
     width:auto
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 /* BLOG LIST
 /*- - - - - - - - - - - - - - - - - - - - */
 .bloglist-small {
@@ -1709,7 +1713,7 @@ footer .date-box {
     border:solid 1px #222
 }
 
-/* - - - - - - - - - - - - - - - - - - - - 
+/* - - - - - - - - - - - - - - - - - - - -
 gallery
 /* - - - - - - - - - - - - - - - - - - - - */
 #gallery .item {
@@ -1737,7 +1741,7 @@ gallery
     width:100%
 }
 
-/* - - - - - - - - - - - - - - - - - - - - 
+/* - - - - - - - - - - - - - - - - - - - -
 jquery isotope
 /* - - - - - - - - - - - - - - - - - - - - */
 .isotope,.isotope .isotope-item {
@@ -1814,7 +1818,7 @@ jquery isotope
     z-index:1
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 title
 - - - - - - - - - - - - - - - - - - - - */
 .text-title {
@@ -1833,7 +1837,7 @@ title
     border-bottom:solid 1px #ddd
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 flickr
 - - - - - - - - - - - - - - - - - - - - */
 #flickr-photo-stream img {
@@ -1851,7 +1855,7 @@ flickr
     border:solid 2px #96C277
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 FLEXSLIDER
 - - - - - - - - - - - - - - - - - - - - */
 .flexslider {
@@ -1972,7 +1976,7 @@ FLEXSLIDER
     background:#EDB83A
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 TAB
 - - - - - - - - - - - - - - - - - - - - */
 .lt_tab {
@@ -2033,7 +2037,7 @@ TAB
 }
 
 /* misc */
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 control nav
 - - - - - - - - - - - - - - - - - - - - */
 .flex-control-nav {
@@ -2153,7 +2157,7 @@ control nav
     transition:.5s
 }
 
-/*- - - - - - - - - - - - - - - - - - - - 
+/*- - - - - - - - - - - - - - - - - - - -
 	MEDIA QUERY
 - - - - - - - - - - - - - - - - - - - - */
 @media (max-width: 992px) {
@@ -2325,7 +2329,7 @@ footer nav {
 	#gallery .item{
 		width:100%;
 	}
-	
+
 	.btn-big-border {
 		display:block;
 		font-size:16px;

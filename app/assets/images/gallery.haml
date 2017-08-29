@@ -1,0 +1,292 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
+    %title Corsiva - Responsive Hotel Website Template
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    / LOAD CSS FILES
+    %link{:href => "css/main.css", :rel => "stylesheet", :type => "text/css"}/
+  %body
+    / header begin
+    %header
+      / logo begin
+      #logo
+        .inner
+          %a{:href => "index.html"}
+            %img{:alt => "", :src => "img/logo.png"}/
+      / logo close
+      / mainmenu begin
+      #mainmenu-container
+        %ul#mainmenu
+          %li
+            %a{:href => "index.html"} Home
+            %ul
+              %li
+                %a{:href => "index.html"} Homepage 1
+              %li
+                %a{:href => "index-2.html"} Homepage 2
+          %li
+            %a{:href => "explore.html"} Descopera
+          %li
+            %a{:href => "room-list.html"} Camere
+            %ul
+              %li
+                %a{:href => "room-1-column.html"} 1 Column
+              %li
+                %a{:href => "room-1-column-sidebar.html"} 1 Column + Sidebar
+              %li
+                %a{:href => "room-2-columns.html"} 2 Column
+              %li
+                %a{:href => "room-2-columns-sidebar.html"} 2 Columns + Sidebar
+              %li
+                %a{:href => "room-3-columns.html"} 3 Columns
+              %li
+                %a{:href => "single-room.html"} Single Room
+          %li
+            %a{:href => "booking.html"} Booking
+          %li
+            %a{:href => "news.html"} Articole
+            %ul
+              %li
+                %a{:href => "news.html"} News List
+              %li
+                %a{:href => "single-news.html"} Single News
+          %li
+            %a{:href => "gallery.html"} Galerie
+          %li
+            %a{:href => "contact.html"} Contact
+      / mainmenu close
+      #menu-btn
+    / header close
+    / subheader begin
+    #subheader
+      %h1 Galerie
+      %h3 Hotel de lux
+    / subheader close
+    / content begin
+    #content
+      .container
+        .row
+          .col-md-12
+            %ul#filters
+              %li
+                %a.selected{"data-filter" => "*", :href => "#"} toate
+              %li
+                %a{"data-filter" => ".event", :href => "#"} camere
+              %li
+                %a{"data-filter" => ".news", :href => "#"} piscina
+              %li
+                %a{"data-filter" => ".gallery", :href => "#"} sala de evenimente
+              %li
+                %a{"data-filter" => ".promotion", :href => "#"} restaurant
+        .row
+          .col-md-12
+            #gallery.gallery
+              / <h4>Gallery Title
+              .item.news
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%281%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%281%29.jpg"}/
+                %h4 Gallery Title 1
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.gallery
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%282%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%282%29.jpg"}/
+                %h4 Gallery Title 2
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.promotion.news
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%283%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%283%29.jpg"}/
+                %h4 Gallery Title 3
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.event
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%284%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%284%29.jpg"}/
+                %h4 Gallery Title 4
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.promotion.gallery
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%285%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%285%29.jpg"}/
+                %h4 Gallery Title 5
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.news
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%286%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%286%29.jpg"}/
+                %h4 Gallery Title 6
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.event.gallery
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%287%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%287%29.jpg"}/
+                %h4 Gallery Title 7
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.gallery
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%288%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%288%29.jpg"}/
+                %h4 Gallery Title 8
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.gallery
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%289%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%289%29.jpg"}/
+                %h4 Gallery Title 9
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.gallery
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%2810%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%2810%29.jpg"}/
+                %h4 Gallery Title 10
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.gallery
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%2811%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%2811%29.jpg"}/
+                %h4 Gallery Title 11
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.gallery
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%2812%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%2812%29.jpg"}/
+                %h4 Gallery Title 12
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.gallery
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%2813%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%2813%29.jpg"}/
+                %h4 Gallery Title 13
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.gallery
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%2814%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%2814%29.jpg"}/
+                %h4 Gallery Title 14
+                %span November 10, 2013
+              / close <h4>Gallery Title
+              / <h4>Gallery Title
+              .item.gallery
+                %a.preview{"data-gal" => "prettyPhoto", :href => "img/gallery/pic%20%2815%29.jpg", :title => "Your Title"}
+                  %img.img-responsive{:alt => "", :src => "img/gallery/pic%20%2815%29.jpg"}/
+                %h4 Gallery Title 15
+                %span November 10, 2013
+              / close <h4>Gallery Title
+    / content close
+    / footer begin
+    %footer
+      .container
+        .row
+          .col-md-4
+            %h3 About Us
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          .col-md-4
+            %h3 Latest News
+            %ul.bloglist-small
+              %li
+                .date-box
+                  %span.day 28
+                  %span.month SEP
+                .txt
+                  %h5
+                    %a{:href => "css/#"} Lorem ipsum sit amet
+                  %div
+                    %div
+                      Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit, sed do eiusmod tempor
+              %li
+                .date-box
+                  %span.day 26
+                  %span.month SEP
+                .txt
+                  %h5
+                    %a{:href => "css/#"} Lorem ipsum sit amet
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor
+            .clearfix
+          .col-md-4
+            %h3 Adresa
+            %address
+              %span J'adore Hotel
+              %span
+                Strada Caransebeșului
+                nr.12
+              %span Lugoj, Timis 305500
+              %span
+                Tel: (40)
+                356 008 888
+              %span
+                Email:
+                %a{:href => "mailto:contact@jadorehotel.com"} contact@jadorehotel.ro
+            .social-icons
+              %a{:href => "#"}
+                %img{:alt => "", :src => "img/social-icons/facebook.png"}/
+              %a{:href => "#"}
+                %img{:alt => "", :src => "img/social-icons/twitter.png"}/
+              %a{:href => "#"}
+                %img{:alt => "", :src => "img/social-icons/dribbble.png"}/
+              %a{:href => "#"}
+                %img{:alt => "", :src => "img/social-icons/blogger.png"}/
+              %a{:href => "#"}
+                %img{:alt => "", :src => "img/social-icons/youtube.png"}/
+              %a{:href => "#"}
+                %img{:alt => "", :src => "img/social-icons/vimeo.png"}/
+      .subfooter
+        .container
+          .row
+            .col-md-6
+              © Copyright 2017 -
+              %a{:href => "http://punctmarketing.com/"}
+                %span{:style => "color: #888888;"}>
+                Punct Marketing
+            .col-md-6
+              %nav
+                %ul
+                  %li
+                    %a{:href => "#"} Home
+                  %li
+                    %a{:href => "#"} Despre Noi
+                  %li
+                    %a{:href => "#"} Booking
+                  %li
+                    %a{:href => "#"} Articole
+                  %li
+                    %a{:href => "#"} Contact
+    / footer close
+    / LOAD JS FILES
+    %script{:src => "js/jquery.min.js"}
+    %script{:src => "js/bootstrap.min.js"}
+    %script{:src => "js/jquery.isotope.min.js"}
+    %script{:src => "js/jquery.prettyPhoto.js"}
+    %script{:src => "js/easing.js"}
+    %script{:src => "js/jquery.lazyload.js"}
+    %script{:src => "js/jquery.ui.totop.js"}
+    %script{:src => "js/selectnav.js"}
+    %script{:src => "js/ender.js"}
+    %script{:src => "js/responsiveslides.min.js"}
+    %script{:src => "js/jquery.flexslider-min.js"}
+    %script{:src => "js/bootstrap-datepicker.js"}
+    %script{:src => "js/owl.carousel.min.js"}
+    %script{:src => "js/custom.js"}

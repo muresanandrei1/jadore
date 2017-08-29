@@ -15,7 +15,7 @@
                 et dolore magna aliqua. Ut enim ad minim veniam, quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat.
-        %img{:alt => "", :src => "img/slider-home/pic%20%281%29.jpg"}/
+        = image_tag 'slider-home/pic1.jpg'
       %li
         .text-wrap
           .inner
@@ -28,7 +28,7 @@
                 et dolore magna aliqua. Ut enim ad minim veniam, quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat.
-        %img{:alt => "", :src => "img/slider-home/pic%20%282%29.jpg"}/
+        = image_tag 'slider-home/pic2.jpg'
 / slider close
 .clearfix
 / content begin
@@ -47,7 +47,7 @@
             197 RON
             %span /noapte
           %a.btn-border{:href => "single-room.html"} Vezi Detalii
-      %img{:alt => "", :src => "img/room/pic%20%281%29.jpg"}/
+      = image_tag 'room/pic1.jpg'
     .room-item.item
       .overlay
         %a{:href => "single-room.html"}
@@ -61,7 +61,7 @@
             189 RON
             %span /noapte
           %a.btn-border{:href => "single-room.html"} Vezi Detalii
-      %img{:alt => "", :src => "img/room/pic%20%282%29.jpg"}/
+      = image_tag 'room/pic2.jpg'
     .room-item.item
       .overlay
         %a{:href => "single-room.html"}
@@ -75,7 +75,7 @@
             218 RON
             %span /noapte
           %a.btn-border{:href => "single-room.html"} Vezi Detalii
-      %img{:alt => "", :src => "img/room/pic%20%283%29.jpg"}/
+      = image_tag 'room/pic3.jpg'
     .room-item.item
       .overlay
         %a{:href => "single-room.html"}
@@ -89,7 +89,7 @@
             238 RON
             %span /noapte
           %a.btn-border{:href => "single-room.html"} Vezi Detalii
-      %img{:alt => "", :src => "img/room/pic%20%284%29.jpg"}/
+      = image_tag 'room/pic4.jpg'
     .room-item.item
       .overlay
         %a{:href => "single-room.html"}
@@ -103,7 +103,7 @@
             257 RON
             %span /noapte
           %a.btn-border{:href => "single-room.html"} Vezi Detalii
-      %img{:alt => "", :src => "img/room/pic%20%285%29.jpg"}/
+      = image_tag 'room/pic5.jpg'
   %section
     .container
       .row
@@ -186,86 +186,4 @@
       o rezervare acum!
   / content close
   / footer begin
-  %footer
-    .container
-      .row
-        .col-md-4
-          %h3 About Us
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur.
-        .col-md-4
-          %h3 Latest News
-          %ul.bloglist-small
-            %li
-              .date-box
-                %span.day 28
-                %span.month SEP
-              .txt
-                %h5
-                  %a{:href => "css/#"} Lorem ipsum sit amet
-                %div
-                  %div
-                    Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit, sed do eiusmod tempor
-            %li
-              .date-box
-                %span.day 26
-                %span.month SEP
-              .txt
-                %h5
-                  %a{:href => "css/#"} Lorem ipsum sit amet
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor
-          .clearfix
-        .col-md-4
-          %h3 Adresa
-          %address
-            %span J'adore Hotel
-            %span
-              Strada Caransebeșului
-              nr.12
-            %span Lugoj, Timis 305500
-            %span
-              Tel:
-              (40) 356 008 888
-            %span
-              Email:
-              %a{:href => "mailto:contact@jadorehotel.com"} contact@jadorehotel.ro
-          .social-icons
-            %a{:href => "#"}>
-              %img{:alt => "", :src => "img/social-icons/facebook.png"}/
-             
-            %a{:href => "#"}>
-             
-            %a{:href => "#"}>
-             
-            %a{:href => "#"}>
-             
-            %a{:href => "#"}>
-             
-            %a{:href => "#"}
-    .subfooter
-      .container
-        .row
-          .col-md-6
-            © Copyright 2017 -
-            %a{:href => "http://punctmarketing.com/"}
-              %span{:style => "color: #888888;"}>
-              Punct Marketing
-          .col-md-6
-            %nav
-              %ul
-                %li
-                  %a{:href => "#"} Home
-                %li
-                  %a{:href => "#"} Despre Noi
-                %li
-                  %a{:href => "#"} Booking
-                %li
-                  %a{:href => "#"} Articole
-                %li
-                  %a{:href => "#"} Contact
+  = render partial: 'partials/footer'
