@@ -1,0 +1,17 @@
+= form_for :room, url: rooms_path do |r|
+  .form-group
+    = r.label :title
+    = r.text_field :title
+  .form-group
+    = r.label :price
+    = r.text_field :price
+  .form-group
+    = r.label :facilities
+    = r.text_field :facilities
+  .form-group
+    = r.label :description
+    = r.text_area :description
+  .form-group
+    = r.file_field :photo
+  .form-group
+    = r.submit
