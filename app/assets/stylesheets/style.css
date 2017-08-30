@@ -92,7 +92,7 @@ header #logo .inner {
 - - - - - - - - - - - - - - - - - - - - */
 #subheader {
     padding:120px 0;
-    background:url(../img/bg/bg-1.jpg) top center no-repeat;
+    background:url(bg/bg-1.jpg) top center no-repeat;
     text-align:center;
     text-transform:uppercase
 }
