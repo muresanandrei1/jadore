@@ -1,4 +1,5 @@
 class RoomsController < ApplicationController
+  before_action :authenticate_admin!, only: ['new', 'destroy', 'update', 'edit']
   def show
     @room = Room.find(params[:id])
   end
