@@ -11,7 +11,7 @@
             - if @room.pictures.present?
               - @room.pictures.each do |picture|
                 %li
-                  = image_tag picture.image.url, class: 'img-responsive'
+                  = image_tag picture.image.url(:medium), class: 'img-responsive'
         .col-md-4
           .inner
             .text
@@ -34,6 +34,11 @@
             %a.btn-border{:href => "#"} Rezerva Acum
     %hr/
     .row
+      = link_to 'Delete Comment',                |
+        room_path(@room),                        |
+        method: :delete,                         |
+        data: { confirm: 'Are you sure?' }       |
+
       / room begin
       .col-md-6
         .room-item.item

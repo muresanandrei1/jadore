@@ -19,6 +19,12 @@ class RoomsController < ApplicationController
     end
   end
 
+  def destroy
+    @room = Room.find(params[:id])
+    @room.destroy
+    redirect_to new_room_path
+  end
+
   private
     def room_params
       params.require(:room).permit(:title, :price, :images, :description, :facilities)
