@@ -1,50 +1,21 @@
 %body
   %header
-    / logo begin
     #logo
       .inner
         %a{:href => "/"}
         = image_tag 'logo.png'
-    / logo close
-    / mainmenu begin
     #mainmenu-container
       %ul#mainmenu
         %li
-          %a{:href => "index.html"} Home
-          %ul
-            %li
-              %a{:href => "index.html"} Homepage 1
-            %li
-              %a{:href => "index-2.html"} Homepage 2
+          = link_to 'Home', '/'
         %li
-          %a{:href => "explore.html"} Descopera
+          = link_to 'Piscina'
         %li
-          %a{:href => "room-list.html"} Camere
-          %ul
-            %li
-              %a{:href => "room-1-column.html"} 1 Column
-            %li
-              %a{:href => "room-1-column-sidebar.html"} 1 Column + Sidebar
-            %li
-              %a{:href => "room-2-columns.html"} 2 Column
-            %li
-              %a{:href => "room-2-columns-sidebar.html"} 2 Columns + Sidebar
-            %li
-              %a{:href => "room-3-columns.html"} 3 Columns
-            %li
-              %a{:href => "single-room.html"} Single Room
+          = link_to 'Restaurant'
         %li
-          %a{:href => "booking.html"} Booking
+          = link_to 'Sala de evenimente'
         %li
-          %a{:href => "news.html"} Articole
-          %ul
-            %li
-              %a{:href => "news.html"} News List
-            %li
-              %a{:href => "single-news.html"} Single News
+          = link_to 'Booking'
         %li
-          %a{:href => "gallery.html"} Galerie
-        %li
-          %a{:href => "contact.html"} Contact
-    / mainmenu close
+          = link_to 'Contact'
     #menu-btn

@@ -19,6 +19,8 @@ gem 'uglifier', '>= 1.3.0'
 
 gem "font-awesome-rails"
 
+gem "paperclip", "~> 5.0.0"
+
 gem 'haml'
 
 gem 'html2haml'

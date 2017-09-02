@@ -348,3 +348,7 @@ jQuery(".room-item .desc").fadeTo(0, 0);
     });
 
 });
+
+$(document).on('turbolinks:before-cache', function() {
+  $(".custom-carousel-1").data('owlCarousel').destroy();
+});

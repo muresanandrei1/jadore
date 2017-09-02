@@ -1,0 +1,74 @@
+#subheader
+  %h3 Camera
+  %h1
+    = @room.title
+#content
+  .container
+    .row
+      .room-single
+        .col-md-8
+          %ul.slides.single-room-carousel
+            - if @room.pictures.present?
+              - @room.pictures.each do |picture|
+                %li
+                  = image_tag picture.image.url(:medium), class: 'img-responsive'
+        .col-md-4
+          .inner
+            .text
+              %h4 Prezentare
+              %p
+                = @room.description
+              .room-specs
+                %h4 Facilitati
+                %ul
+                  %li Double Size Bed
+                  %li Hotspot Area
+                  %li Beach View
+                  %li Room Services
+                  %li Free Dinner
+                  %li Free Parking
+            .price
+              = @room.price
+              %span RON
+              %span /noapte
+            %a.btn-border{:href => "#"} Rezerva Acum
+    %hr/
+    .row
+      = link_to 'Delete Comment',                |
+        room_path(@room),                        |
+        method: :delete,                         |
+        data: { confirm: 'Are you sure?' }       |
+
+      / room begin
+      .col-md-6
+        .room-item.item
+          .overlay
+            %a{:href => "#"}
+              %h1 Deluxe Room
+            .desc
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip.
+              .price
+                $199
+                %span /night
+              %a.btn-border{:href => "single-room.html"} View Details
+          %img{:alt => "", :src => "img/room/pic%20%281%29.jpg"}/
+      / room close
+      / room begin
+      .col-md-6
+        .room-item.item
+          .overlay
+            %a{:href => "#"}
+              %h1 Luxury Room
+            .desc
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip.
+              .price
+                $299
+                %span /night
+              %a.btn-border{:href => "single-room.html"} View Details
+          %img{:alt => "", :src => "img/room/pic%20%282%29.jpg"}/

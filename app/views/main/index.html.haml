@@ -34,156 +34,100 @@
 / content begin
 #content.no-top.no-bottom
   .fx.custom-carousel-1
-    .room-item.item
-      .overlay
-        %a{:href => "single-room.html"}
-          %h1 Camera Single
-        .desc
-          Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip.
-          .price
-            197 RON
-            %span /noapte
-          %a.btn-border{:href => "single-room.html"} Vezi Detalii
-      = image_tag 'room/pic1.jpg'
-    .room-item.item
-      .overlay
-        %a{:href => "single-room.html"}
-          %h1 Camera Double
-        .desc
-          Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip.
-          .price
-            189 RON
-            %span /noapte
-          %a.btn-border{:href => "single-room.html"} Vezi Detalii
-      = image_tag 'room/pic2.jpg'
-    .room-item.item
-      .overlay
-        %a{:href => "single-room.html"}
-          %h1 Camera Double Premium
-        .desc
-          Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip.
-          .price
-            218 RON
-            %span /noapte
-          %a.btn-border{:href => "single-room.html"} Vezi Detalii
-      = image_tag 'room/pic3.jpg'
-    .room-item.item
-      .overlay
-        %a{:href => "single-room.html"}
-          %h1 Camera Triple
-        .desc
-          Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip.
-          .price
-            238 RON
-            %span /noapte
-          %a.btn-border{:href => "single-room.html"} Vezi Detalii
-      = image_tag 'room/pic4.jpg'
-    .room-item.item
-      .overlay
-        %a{:href => "single-room.html"}
-          %h1 Camera Triple Premium
-        .desc
-          Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip.
-          .price
-            257 RON
-            %span /noapte
-          %a.btn-border{:href => "single-room.html"} Vezi Detalii
-      = image_tag 'room/pic5.jpg'
-  %section
-    .container
-      .row
-        .col-md-6
-          .icon-box
-            %i.fa.fa-bell-o
-            .text
-              %h3 Room Services
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo.
-        .col-md-6
-          .icon-box
-            %i.fa.fa-coffee
-            .text
-              %h3 Cafea
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo.
-        .col-md-6
-          .icon-box
-            %i.fa.fa-car
-            .text
-              %h3 Parcare Gratis
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo.
-        .col-md-6
-          .icon-box
-            %i.fa.fa-dropbox
-            .text
-              %h3 Seif
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo.
-  %section#section-about-1.dark.side-bg
-    .col-md-6.col-md-offset-6.pull-right.image-container
-      .background-image
-    .container
-      .row
-        .col-md-5
-          .inner-padding
-            %ul.client-quotes.animated{"data-animation" => "fadeIn"}
-              %li
-                .text
-                  Sed ut perspiciatis unde omnis iste natus
-                  error sit voluptatem accusantium doloremque laudantium,
-                  totam rem aperiam, eaque ipsa quae ab illo inventore
-                  veritatis et quasi architecto beatae vitae dicta sunt
-                  explicabo.
-                %span.name Tina Tunnel
-                %span.company Microsoft
-              %li
-                .text
-                  Sed ut perspiciatis unde omnis iste natus
-                  error sit voluptatem accusantium doloremque laudantium,
-                  totam rem aperiam, eaque ipsa quae ab illo inventore
-                  veritatis et quasi architecto beatae vitae dicta sunt
-                  explicabo.
-                %span.name Sandra Bullock
-                %span.company Apple
-              %li
-                .text
-                  Sed ut perspiciatis unde omnis iste natus
-                  error sit voluptatem accusantium doloremque laudantium,
-                  totam rem aperiam, eaque ipsa quae ab illo inventore
-                  veritatis et quasi architecto beatae vitae dicta sunt
-                  explicabo.
-                %span.name Angelina
-                %span.company Samsung
-          .clearfix
-    .clearfix
-  %section.call-to-action.text-center
-    %a.btn-big-border{:href => "#"}
-      Faceti
-      o rezervare acum!
-  / content close
-  / footer begin
-  = render partial: 'partials/footer'
+    - @rooms.each do |room|
+      .room-item.item
+        .overlay
+          %a{:href => "single-room.html"}
+            %h1
+              = room.title
+          .desc
+            = room.description
+            .price
+              =room.price
+              %span RON/noapte
+            = link_to 'Vezi Detalii', room_path(room.id), class: 'btn-border'
+            -# %a.btn-border Vezi Detalii
+        = image_tag room.pictures.first.image.url(:medium)
+%section
+  .container
+    .row
+      .col-md-6
+        .icon-box
+          %i.fa.fa-bell-o
+          .text
+            %h3 Room Services
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architecto
+            beatae vitae dicta sunt explicabo.
+      .col-md-6
+        .icon-box
+          %i.fa.fa-coffee
+          .text
+            %h3 Cafea
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architecto
+            beatae vitae dicta sunt explicabo.
+      .col-md-6
+        .icon-box
+          %i.fa.fa-car
+          .text
+            %h3 Parcare Gratis
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architecto
+            beatae vitae dicta sunt explicabo.
+      .col-md-6
+        .icon-box
+          %i.fa.fa-dropbox
+          .text
+            %h3 Seif
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque
+            ipsa quae ab illo inventore veritatis et quasi architecto
+            beatae vitae dicta sunt explicabo.
+%section#section-about-1.dark.side-bg
+  .col-md-6.col-md-offset-6.pull-right.image-container
+    .background-image
+  .container
+    .row
+      .col-md-5
+        .inner-padding
+          %ul.client-quotes.animated{"data-animation" => "fadeIn"}
+            %li
+              .text
+                Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+              %span.name Tina Tunnel
+              %span.company Microsoft
+            %li
+              .text
+                Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+              %span.name Sandra Bullock
+              %span.company Apple
+            %li
+              .text
+                Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+              %span.name Angelina
+              %span.company Samsung
+        .clearfix
+  .clearfix
+%section.call-to-action.text-center
+  %a.btn-big-border{:href => "#"}
+    Faceti
+    o rezervare acum!
+/ content close
+/ footer begin
+= render partial: 'partials/footer'
