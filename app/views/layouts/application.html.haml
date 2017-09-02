@@ -8,5 +8,6 @@
     = stylesheet_link_tag    'style', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+    = render 'partials/header'
     = yield
-    %div
+    = render 'partials/footer'

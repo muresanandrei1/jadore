@@ -1,0 +1,20 @@
+%hr
+- @room.each do |room|
+  .container
+    .row
+      = link_to room_path(room) do
+        .room-row
+          .room-details
+            .room-title
+              %h3 Titlu:
+              = room.title
+            .room-description
+              %h4 Descriere
+              = room.description
+          .room-links
+            = link_to 'Stergeti camera',                |
+              room_path(room),                        |
+              method: :delete,                         |
+              data: { confirm: 'Sunteti sigur?' }       |
+            = link_to 'Editati camera', edit_room_path(room)
+  %hr

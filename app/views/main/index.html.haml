@@ -1,5 +1,3 @@
-= render partial: 'partials/header'
-/ slider
 #slider
   .callbacks_container
     %ul.rslides.pic_slider
@@ -47,7 +45,8 @@
               %span RON/noapte
             = link_to 'Vezi Detalii', room_path(room.id), class: 'btn-border'
             -# %a.btn-border Vezi Detalii
-        = image_tag room.pictures.first.image.url(:medium)
+        - if room.pictures.present?
+          = image_tag room.pictures.first.image.url(:medium)
 %section
   .container
     .row
@@ -128,6 +127,3 @@
   %a.btn-big-border{:href => "#"}
     Faceti
     o rezervare acum!
-/ content close
-/ footer begin
-= render partial: 'partials/footer'
