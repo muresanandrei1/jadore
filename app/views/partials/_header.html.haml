@@ -4,6 +4,7 @@
       .admin-menu
         = link_to 'Camera noua', new_room_path
         = link_to 'Toate camerele', rooms_path
+        = link_to 'Logout', destroy_admin_session_path, method: :delete, class: 'pull-right'
   #logo
     .inner
       %a{:href => "/"}
