@@ -357,8 +357,9 @@ blockquote span {
 hr {
     border:none;
     height:80px;
-    background:url(divider-1.png) center no-repeat;
-    clear:both
+    background: center no-repeat;
+    background-image: image-url('divider-1.png');
+    clear: both;
 }
 
 .divider {
