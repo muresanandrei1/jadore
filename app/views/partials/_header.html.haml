@@ -1,21 +1,25 @@
-%body
-  %header
-    #logo
-      .inner
-        %a{:href => "/"}
+%header
+  - if admin_signed_in?
+    .container
+      .admin-menu
+        = link_to 'Camera noua', new_room_path
+        = link_to 'Toate camerele', rooms_path
+  #logo
+    .inner
+      %a{:href => "/"}
         = image_tag 'logo.png'
-    #mainmenu-container
-      %ul#mainmenu
-        %li
-          = link_to 'Home', '/'
-        %li
-          = link_to 'Piscina'
-        %li
-          = link_to 'Restaurant'
-        %li
-          = link_to 'Sala de evenimente'
-        %li
-          = link_to 'Booking'
-        %li
-          = link_to 'Contact'
-    #menu-btn
+  #mainmenu-container
+    %ul#mainmenu
+      %li
+        = link_to 'Home', '/'
+      %li
+        = link_to 'Piscina'
+      %li
+        = link_to 'Restaurant'
+      %li
+        = link_to 'Sala de evenimente'
+      %li
+        = link_to 'Booking'
+      %li
+        = link_to 'Contact'
+  #menu-btn
