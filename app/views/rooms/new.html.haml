@@ -1,4 +1,4 @@
-= form_for :room, url: rooms_path do |r|
+= form_for :room, :html => { :class => '', multipart: true }, url: rooms_path do |r|
   .form-group
     = r.label :title
     = r.text_field :title
@@ -12,6 +12,7 @@
     = r.label :description
     = r.text_area :description
   .form-group
-    = r.file_field :photo
+    = r.label :pictures, :class => 'control-label'
+    = file_field_tag "images[]", type: :file, multiple: true
   .form-group
     = r.submit

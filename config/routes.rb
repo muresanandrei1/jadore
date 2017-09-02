@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pool/index'
+
   root 'main#index'
 
   resources :rooms

@@ -8,12 +8,10 @@
       .room-single
         .col-md-8
           %ul.slides.single-room-carousel
-            %li
-              %img.img-responsive{:alt => "", :src => "img/single-room/pic%20%281%29.jpg"}/
-            %li
-              %img.img-responsive{:alt => "", :src => "img/single-room/pic%20%282%29.jpg"}/
-            %li
-              %img.img-responsive{:alt => "", :src => "img/single-room/pic%20%283%29.jpg"}/
+            - if @room.pictures.present?
+              - @room.pictures.each do |picture|
+                %li
+                  = image_tag picture.image.url, class: 'img-responsive'
         .col-md-4
           .inner
             .text
