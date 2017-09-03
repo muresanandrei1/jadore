@@ -196,6 +196,12 @@ jQuery(".room-item .desc").fadeTo(0, 0);
         autoPlay: false,
     });
 
+    jQuery(".gallery-carousel").owlCarousel({
+      items: 1,
+      navigation: true,
+      pagination: false
+    });
+
     jQuery(".custom-carousel-1").owlCarousel({
         items: 3,
         singleItem: false,

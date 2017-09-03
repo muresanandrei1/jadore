@@ -1,6 +1,6 @@
 class PoolsController < ApplicationController
   def index
-    @pools = Pool.all
+    @pictures = Picture.where(attachable_type: 'Pool')
   end
 
   def new
