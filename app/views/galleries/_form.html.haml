@@ -1,7 +1,0 @@
-= form_for :gallery, :html => { :class => 'form-horizontal', multipart: true } do |f|
-  .control-group
-    = f.label :pictures, :class => 'control-label'
-    .controls
-      = file_field_tag "images[]", type: :file, multiple: true
-  .form-actions
-    = f.submit nil, :class => 'btn btn-primary'

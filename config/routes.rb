@@ -5,7 +5,10 @@ Rails.application.routes.draw do
 
   resources :rooms
 
-  resources :pool, only: ['index']
+  resources :pools do
+    get 'delete', on: :collection
+    post 'destroy_pictures', on: :collection
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

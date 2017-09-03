@@ -1,0 +1,5 @@
+.container
+  - @pools.each do |pool|
+    - pool.pictures.each do |picture|
+      .col-md-3
+        = image_tag picture.image.url(:medium), class: 'img-responsive'
