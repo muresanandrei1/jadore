@@ -1,0 +1,7 @@
+.container
+  = form_tag destroy_pictures_pools_path, method: :post do
+    - @pictures.each do |picture|
+      .col-md-12
+        = check_box_tag 'pictures_ids[]', picture.id
+        = image_tag picture.image.url
+    = submit_tag 'Delete Selected'

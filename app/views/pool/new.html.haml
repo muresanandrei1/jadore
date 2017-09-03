@@ -1,0 +1,6 @@
+= form_for @pool, :html => { :class => '', multipart: true } do |p|
+  .form-group
+    = p.label :pictures, :class => 'control-label'
+    = file_field_tag "images[]", type: :file, multiple: true
+  .form-group
+    = p.submit

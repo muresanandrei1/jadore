@@ -2,36 +2,25 @@
   .container
     .row
       .col-md-4
-        %h3 About Us
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat
-        nulla pariatur.
+        %h3
+          = image_tag 'logo.png', :style => "width: 182px; height: 86px;"
+        %h3
+        Hotelul J'adore Boutique se află în orașul Lugoj din judeţul Timiş. Oferă piscină sezonieră în aer liber şi terasă. Oaspeții pot lua masa la restaurant. Există parcare privată gratuită.
       .col-md-4
-        %h3 Latest News
-        %ul.bloglist-small
-          %li
-            .date-box
-              %span.day 28
-              %span.month SEP
-            .txt
-              %h5
-                %a{:href => "css/#"} Lorem ipsum sit amet
-              %div
-                %div
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit, sed do eiusmod tempor
-          %li
-            .date-box
-              %span.day 26
-              %span.month SEP
-            .txt
-              %h5
-                %a{:href => "css/#"} Lorem ipsum sit amet
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor
+        %h3 Social Media
+        .social-icons
+          %a{:href => "https://www.facebook.com/jadoreboutiquehotel/?fref=ts"}
+            = image_tag 'social-icons/facebook.png'
+          %a{:href => "#"}
+            = image_tag 'social-icons/twitter.png'
+          %a{:href => "#"}
+            = image_tag 'social-icons/dribbble.png'
+          %a{:href => "#"}
+            = image_tag 'social-icons/blogger.png'
+          %a{:href => "#"}
+            = image_tag 'social-icons/youtube.png'
+          %a{:href => "#"}
+            = image_tag 'social-icons/vimeo.png'
         .clearfix
       .col-md-4
         %h3 Adresa
@@ -43,41 +32,30 @@
           %span Lugoj, Timis 305500
           %span
             Tel:
-            (40) 356 008 888
+            %a{:href => "tel:0356008888"} (40) 356 008 888
           %span
             Email:
             %a{:href => "mailto:contact@jadorehotel.com"} contact@jadorehotel.ro
-        .social-icons
-          %a{:href => "#"}>
-            = image_tag 'social-icons/facebook.png'
-           
-          %a{:href => "#"}>
-           
-          %a{:href => "#"}>
-           
-          %a{:href => "#"}>
-           
-          %a{:href => "#"}>
-           
-          %a{:href => "#"}
   .subfooter
     .container
       .row
         .col-md-6
           © Copyright 2017 -
-          %a{:href => "http://punctmarketing.com/"}
+          %a{:href => "http://holdmarketing.ro/"}
             %span{:style => "color: #888888;"}>
-            Punct Marketing
+            Hold Marketing
         .col-md-6
           %nav
             %ul
               %li
-                %a{:href => "#"} Home
+                %a{:href => "index.html"} Acasa
               %li
-                %a{:href => "#"} Despre Noi
+                %a{:href => "piscina.html"} Piscina
               %li
-                %a{:href => "#"} Booking
+                %a{:href => "restaurant.html"} Restaurant
               %li
-                %a{:href => "#"} Articole
+                %a{:href => "sala-de-evenimente.html"} Sala de evenimente
               %li
-                %a{:href => "#"} Contact
+                %a{:href => "https://www.booking.com"} Booking
+              %li
+                %a{:href => "contact.html"} Contact
