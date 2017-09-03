@@ -15,5 +15,7 @@
                   = room.description
             .col-md-2.text-center
               = link_to 'Stergeti camera', room_path(room), class: 'btn btn-border', method: :delete, data: { confirm: 'Sunteti sigur?' }
+              %br
+              %br
               = link_to 'Editati camera', edit_room_path(room), class: 'btn btn-border'
             .clearfix
