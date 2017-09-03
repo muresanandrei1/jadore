@@ -199,7 +199,8 @@ jQuery(".room-item .desc").fadeTo(0, 0);
     jQuery(".gallery-carousel").owlCarousel({
       items: 1,
       navigation: true,
-      pagination: false
+      pagination: false,
+      navigationText: ["",""]
     });
 
     jQuery(".custom-carousel-1").owlCarousel({
