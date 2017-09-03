@@ -1,20 +1,19 @@
-%hr
-- @room.each do |room|
+#content
   .container
-    .row
-      = link_to room_path(room) do
-        .room-row
-          .room-details
-            .room-title
-              %h3 Titlu:
-              = room.title
-            .room-description
-              %h4 Descriere
-              = room.description
-          .room-links
-            = link_to 'Stergeti camera',                |
-              room_path(room),                        |
-              method: :delete,                         |
-              data: { confirm: 'Sunteti sigur?' }       |
-            = link_to 'Editati camera', edit_room_path(room)
-  %hr
+    .row.room-list
+      .col-md-12
+        - @room.each do |room|
+          .room-item-alt
+            .col-md-5
+              = image_tag room.pictures.first.image.url(:medium)
+            .col-md-5
+              .desc
+                = link_to room_path(room) do
+                  %h1
+                    = room.title
+                %p
+                  = room.description
+            .col-md-2.text-center
+              = link_to 'Stergeti camera', room_path(room), class: 'btn btn-border', method: :delete, data: { confirm: 'Sunteti sigur?' }
+              = link_to 'Editati camera', edit_room_path(room), class: 'btn btn-border'
+            .clearfix
