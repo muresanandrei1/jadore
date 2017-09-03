@@ -1,3 +1,84 @@
 // Place all the styles related to the Pool controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.pool-top-background {
+  background-image: image-url('pool/1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  font-family: sans-serif;
+}
+
+.pool-heading {
+  color: #000;
+  font-size: 58px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  font-family: inherit;
+}
+
+.pool-sub-heading {
+  color: #333;
+  font-weight: lighter;
+  font-family: inherit;
+  font-size: 19px;
+  letter-spacing: 3px;
+  background-color: #fff;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.pool-first-row {
+  margin-top: 30px;
+}
+
+.pool-second-row {
+  margin-top: 220px;
+}
+
+.pool-top-text, .pool-bottom-text {
+  background-color: #fff;
+  padding: 18px;
+  padding-left: 19px;
+  width: 70%;
+}
+
+.pool-bottom-text {
+  width: 100%;
+}
+.pool-text {
+  color: #000;
+  font-family: inherit;
+  font-size: 40px;
+}
+
+.pool-third-row {
+  margin-top: 80px;
+}
+
+.blue-text-background {
+  background-color: #005879;
+  padding: 25px;
+  color: #000;
+  letter-spacing: 2px;
+  font-family: inherit;
+  font-weight: bold;
+  text-align: right;
+  width: 85%;
+  font-size: 38px;
+  &:before, &:after  {
+    font-family: "FontAwesome";
+    text-align: right;
+    content: "\f111";
+    font-size: 16px;
+    padding-left: 80px;
+    padding-right: 20px;
+    color: #fff;
+    vertical-align: bottom;
+  }
+  &:before {
+    padding-right: 90px;
+  }
+}

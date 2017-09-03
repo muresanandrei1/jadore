@@ -1,5 +1,5 @@
 class Picture < ApplicationRecord
-  belongs_to :room
+  belongs_to :attachable, polymorphic: true, optional: true
 
   has_attached_file :image,
     :path => ":rails_root/public/images/:id/:filename",

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170902133443) do
+ActiveRecord::Schema.define(version: 20170902172716) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -36,7 +36,13 @@ ActiveRecord::Schema.define(version: 20170902133443) do
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
-    t.integer "room_id"
+    t.string "attachable_type"
+    t.integer "attachable_id"
+  end
+
+  create_table "pools", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "rooms", force: :cascade do |t|
