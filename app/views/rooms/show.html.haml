@@ -21,12 +21,9 @@
               .room-specs
                 %h4 Facilitati
                 %ul
-                  %li Double Size Bed
-                  %li Hotspot Area
-                  %li Beach View
-                  %li Room Services
-                  %li Free Dinner
-                  %li Free Parking
+                  - @room.facilities.split(',').each do |facility|
+                    %li
+                      = facility
             .price
               = @room.price
               %span RON
@@ -34,36 +31,17 @@
             %a.btn-border{:href => "#"} Rezerva Acum
     %hr/
     .row
-      / room begin
-      .col-md-6
-        .room-item.item
-          .overlay
-            %a{:href => "#"}
-              %h1 Deluxe Room
-            .desc
-              Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip.
-              .price
-                $199
-                %span /night
-              %a.btn-border{:href => "single-room.html"} View Details
-          %img{:alt => "", :src => "img/room/pic%20%281%29.jpg"}/
-      / room close
-      / room begin
-      .col-md-6
-        .room-item.item
-          .overlay
-            %a{:href => "#"}
-              %h1 Luxury Room
-            .desc
-              Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip.
-              .price
-                $299
-                %span /night
-              %a.btn-border{:href => "single-room.html"} View Details
-          %img{:alt => "", :src => "img/room/pic%20%282%29.jpg"}/
+      - @random_rooms.each do |random_room|
+        .col-md-6
+          .room-item.item
+            .overlay
+              = link_to random_room do
+                %h1
+                  = random_room.title
+              .desc
+                = random_room.description
+                .price
+                  = random_room.price
+                  %span Ron / night
+                = link_to 'Vedeti Detalii', random_room, class: 'btn btn-border'
+            = image_tag random_room.pictures.first.image.url(:medium)

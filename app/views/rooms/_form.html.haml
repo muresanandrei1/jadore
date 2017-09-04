@@ -1,18 +1,21 @@
-= form_for @room, :html => { :class => '', multipart: true } do |r|
-  .form-group
-    = r.label :title
-    = r.text_field :title
-  .form-group
-    = r.label :price
-    = r.text_field :price
-  .form-group
-    = r.label :facilities
-    = r.text_field :facilities
-  .form-group
-    = r.label :description
-    = r.text_area :description
-  .form-group
-    = r.label :pictures, :class => 'control-label'
-    = file_field_tag "images[]", type: :file, multiple: true
-  .form-group
-    = r.submit
+.container
+  = form_for @room, :html => { :class => '', multipart: true } do |r|
+    .form-group
+      = r.label :title
+      = r.text_field :title, class: 'form-control'
+    .form-group
+      = r.label :price
+      = r.text_field :price, class: 'form-control'
+    .form-group
+      = r.label :facilities
+      %br
+      = r.label 'Adaugati facilitati separate printr-o virgula'
+      = r.text_field :facilities, class: 'form-control'
+    .form-group
+      = r.label :description
+      = r.text_area :description, class: 'form-control'
+    .form-group
+      = r.label :pictures, :class => 'control-label'
+      = file_field_tag "images[]", type: :file, multiple: true
+    .form-group
+      = r.submit 'Submit', class: 'btn btn-border'

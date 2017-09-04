@@ -2,9 +2,16 @@
   - if admin_signed_in?
     .container
       .admin-menu
-        = link_to 'Camera noua', new_room_path
-        = link_to 'Toate camerele', rooms_path
-        = link_to 'Logout', destroy_admin_session_path, method: :delete, class: 'pull-right'
+        %span
+          = link_to 'Camera noua', new_room_path
+        %span
+          = link_to 'Toate camerele', rooms_path
+        %span
+          = link_to 'Adauga poze pentru piscina', new_pool_path
+        %span
+          = link_to 'Sterge poze de la piscina', delete_pools_path
+        %span
+          = link_to 'Logout', destroy_admin_session_path, method: :delete, class: 'pull-right'
   #logo
     .inner
       %a{:href => "/"}

@@ -2,6 +2,7 @@ class RoomsController < ApplicationController
   before_action :authenticate_admin!, only: ['new', 'destroy', 'update', 'edit']
   def show
     @room = Room.find(params[:id])
+    @random_rooms = Room.order("RANDOM()").limit(2)
   end
 
   def new
@@ -32,6 +33,11 @@ class RoomsController < ApplicationController
   def update
     @room = Room.find(params[:id])
     if @room.update(room_params)
+      if params[:images]
+        params[:images].each { |image|
+          @room.pictures.create(image: image)
+        }
+      end
       redirect_to @room
     else
       render 'edit'
