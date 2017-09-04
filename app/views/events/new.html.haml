@@ -1,0 +1,9 @@
+.container
+  %br
+  = form_for @event, :html => { :class => '', multipart: true } do |p|
+    .form-group
+      = p.label :pictures, :class => 'control-label'
+      = file_field_tag "images[]", type: :file, multiple: true
+    .form-group
+      = p.submit 'Adauga poze', class: 'btn btn-border'
+  %br

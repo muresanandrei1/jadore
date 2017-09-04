@@ -1,0 +1,98 @@
+// Place all the styles related to the Events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.top-event-background {
+  background-image: image-url('events/topbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 2300px;
+}
+
+.event-header-curtain {
+  background-image: image-url('events/curtain.png');
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.event-header-image {
+  background-image: image-url('events/sala.png');
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 680px;
+}
+
+.text-event-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  h1 {
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    font-weight: bold;
+    color: #40064f;
+  }
+  p {
+    font-size: 26px;
+    line-height: 35px;
+    text-align: justify;
+    color: white;
+  }
+}
+
+.lights-background {
+  background-image: image-url('events/lights.png');
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1300px;
+}
+
+.gradient-overlay {
+  pointer-events: none;
+  width: 100%;
+  display: block;
+  position: absolute;
+  height: 300px;
+  transform: translateY(-300px);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
+.event-gallery-section {
+  background-color: black;
+}
+
+.shape-0 img, .shape-5 img {
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.shape-1 img {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.shape-2 img, .shape-3 img {
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.shape-4 img {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.event-page .gallery-item {
+  border: none;
+}

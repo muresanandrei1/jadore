@@ -1,7 +1,7 @@
 module ApplicationHelper
-  def add_pool_class
-    if current_page?(pools_path)
-      return 'pool-page'
+  def add_page_class(path, page)
+    if current_page?(path)
+      return page
     end
   end
 end
