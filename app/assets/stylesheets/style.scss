@@ -93,6 +93,7 @@ header #logo .inner {
     padding:120px 0;
     background:url(bg/bg-1.jpg) top center no-repeat;
     text-align:center;
+    background-size: cover;
     text-transform:uppercase
 }
 
@@ -2377,5 +2378,11 @@ footer nav {
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: right;
+  }
+}
+
+.restaurant-page {
+  .pool-gallery {
+    transform: translateY(0);
   }
 }

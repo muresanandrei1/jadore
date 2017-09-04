@@ -1,0 +1,9 @@
+.container
+  = form_tag destroy_pictures_restaurants_path, method: :post do
+    - @pictures.each do |picture|
+      .row
+        .col-md-12
+          = check_box_tag 'pictures_ids[]', picture.id
+          %a.preview{"data-gal" => "prettyPhoto", :href => picture.image.url(:original)}
+            = image_tag picture.image.url(:medium)
+    = submit_tag 'Delete Selected'

@@ -7,7 +7,7 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = stylesheet_link_tag    'style', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  %body{class: "#{add_page_class(pools_path, 'pool-page')} #{add_page_class(events_path, 'event-page')}"}
+  %body{class: "#{add_page_class(pools_path, 'pool-page')} #{add_page_class(events_path, 'event-page')} #{add_page_class(restaurants_path, 'restaurant-page')}"}
     = render 'partials/header'
     = yield
     = render 'partials/footer'

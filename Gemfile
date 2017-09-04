@@ -19,6 +19,10 @@ gem 'uglifier', '>= 1.3.0'
 
 gem "font-awesome-rails"
 
+gem 'mail_form'
+
+gem 'simple_form'
+
 gem 'devise'
 
 gem "paperclip", "~> 5.0.0"
