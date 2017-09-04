@@ -2354,3 +2354,28 @@ footer nav {
     background: #005879;
   }
 }
+
+.event-page {
+  header {
+    background-color: #40064f;
+    background-image: image-url('events/headerbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #mainmenu-container {
+    background-color: #fff;
+    border: none;
+    #mainmenu li a {
+      color: #000;
+    }
+  }
+
+  footer {
+    background-color: #40064f;
+    background-image: image-url('events/footerbg.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}

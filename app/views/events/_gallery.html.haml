@@ -1,0 +1,9 @@
+.container
+  .pool-gallery.gallery-carousel
+    - @pictures.each_slice(6) do |picture_slice|
+      .item
+        - picture_slice.each_with_index do |picture, index|
+          .col-md-4
+            %a.preview{"data-gal" => "prettyPhoto", :href => picture.image.url(:original)}
+              %div{class: 'shape-'"#{index}"}
+                = image_tag picture.image.url(:medium), class: 'img-responsive gallery-item'
