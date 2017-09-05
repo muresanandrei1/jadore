@@ -1,4 +1,4 @@
-deploy_to = "/home/deployer/jadore"
+deploy_to = "/home/deploy/jadore"
 root = "#{deploy_to}/current"
 working_directory root
 pid "#{deploy_to}/shared/pids/unicorn.pid"
