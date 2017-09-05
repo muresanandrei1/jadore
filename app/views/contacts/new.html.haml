@@ -1,0 +1,46 @@
+#subheader
+  %h1 Contact
+  %h3 Ramaneti conectati!
+/ subheader close
+#map-container
+  %iframe{:frameborder => "0", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "https://www.google.com/maps/embed?pb=%211m23%211m12%211m3%211d89216.05692635482%212d21.850639242577422%213d45.67086460128687%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%214m8%213e6%214m0%214m5%211s0x474fbecf1f73094d%3A0x92f01a1b6eb3e3dd%212sjadore+hotel+lugoj%213m2%211d45.670885999999996%212d21.920679%215e0%213m2%211sen%212sus%214v1488739388283;t=m&z=14&output=embed&iwloc=false"}
+/ content begin
+#content
+  .container
+    .row
+      .col-md-8
+        .col-md-12
+          %h3 Trimiteti-ne un mesaj acum!
+          Simtiti-va liberi sa ne contactati prin formularul de mai jos.
+          %br/
+          %br/
+        .contact_form_holder
+          = simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f|
+            .col-md-6
+              = f.input :name, :placeholder => 'Numele si Prenumele', :type => 'text'
+            .col-md-6
+              = f.input :mail, :placeholder => 'Email', :type => 'text'
+            .col-md-12
+              = f.text_area :message, :placeholder => 'Mesajul', :cols => "100", :rows => "10"
+              #mail_success.success
+                Multumim! Mesajul a
+                fost trimis!
+              #mail_failed.error
+                Eroare, mesajul nu a fost
+                trimis!
+              %p#btnsubmit
+                = f.button :submit, 'Trimiteti', :class => "btn btn-custom"
+      #sidebar.col-md-4
+        / widget text
+        .widget.widget-text
+          %address
+            %h4 J'adore Hotel
+            %span Strada Caransebeșului nr.12
+            %span
+              Lugoj, Timis
+              305500
+            %span Tel: (40) 356 008 888
+            %span
+              Email:
+              %a{:href => "mailto:contact@jadorehotel.com"} contact@jadorehotel.ro
+          .small-border
