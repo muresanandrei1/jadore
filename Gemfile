@@ -29,6 +29,10 @@ gem "paperclip", "~> 5.0.0"
 
 gem 'haml'
 
+gem 'unicorn'
+
+gem 'mina', '~> 0.3.8'
+
 gem 'html2haml'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
