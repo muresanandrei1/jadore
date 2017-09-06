@@ -15,6 +15,7 @@ development:
 
 production:
   <<: *default
+  adapter: postgresql
   pool: 5
   database: jadore_production
   username: jadore
