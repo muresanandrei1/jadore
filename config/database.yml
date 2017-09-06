@@ -22,6 +22,7 @@ test:
 
 production:
   <<: *default
+  pool: 5 
   database: jadore_production
   username: jadore
-  password: jadore
+  password: <%= ENV['JADORE_DATABASE_PASSWORD'] %>
