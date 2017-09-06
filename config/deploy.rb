@@ -5,7 +5,7 @@ require 'mina/git'
 require 'mina/rbenv'
 
 set :domain, '188.213.20.95'
-set :deploy_to, '/home/deployer/jadore'
+set :deploy_to, '/home/deploy/jadore'
 set :app_path,   "#{deploy_to}/#{current_path}"
 set :repository, 'git@github.com:muresanandrei1/jadore.git'
 set :branch, 'master'
