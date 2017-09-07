@@ -94,33 +94,15 @@
       .col-md-5
         .inner-padding
           %ul.client-quotes.animated{"data-animation" => "fadeIn"}
-            %li
-              .text
-                Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore
-                veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo.
-              %span.name Tina Tunnel
-              %span.company Microsoft
-            %li
-              .text
-                Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore
-                veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo.
-              %span.name Sandra Bullock
-              %span.company Apple
-            %li
-              .text
-                Sed ut perspiciatis unde omnis iste natus
-                error sit voluptatem accusantium doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore
-                veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo.
-              %span.name Angelina
-              %span.company Samsung
+            - if @testimonial.present?
+              - @testimonial.each do |testimonial|
+                %li
+                  .text
+                    = testimonial.description
+                  %span.name
+                    = testimonial.name
+                  %span.company
+                    = testimonial.firm
         .clearfix
   .clearfix
 %section.call-to-action.text-center

@@ -48,14 +48,14 @@
           %nav
             %ul
               %li
-                %a{:href => "index.html"} Acasa
+                = link_to 'Acasa', '/'
               %li
-                %a{:href => "piscina.html"} Piscina
+                = link_to 'Piscina', pools_path
               %li
-                %a{:href => "restaurant.html"} Restaurant
+                = link_to 'Restaurant', restaurants_path
               %li
-                %a{:href => "sala-de-evenimente.html"} Sala de evenimente
+                = link_to 'Sala de evenimente', events_path
               %li
-                %a{:href => "https://www.booking.com"} Booking
+                = link_to 'Booking'
               %li
-                %a{:href => "contact.html"} Contact
+                = link_to 'Contact', contacts_path

@@ -1,0 +1,13 @@
+.container
+  = form_for @testimonial, :html => { :class => '', multipart: true } do |r|
+    .form-group
+      = r.label :name
+      = r.text_field :name, class: 'form-control'
+    .form-group
+      = r.label :firm
+      = r.text_field :firm, class: 'form-control'
+    .form-group
+      = r.label :description
+      = r.text_area :description, class: 'form-control'
+    .form-group
+      = r.submit 'Submit', class: 'btn btn-border'

@@ -1,24 +1,26 @@
 %header
   - if admin_signed_in?
-    .container
+    .container-fluid
       .admin-menu
         %span
           = link_to 'Camera noua', new_room_path
         %span
           = link_to 'Toate camerele', rooms_path
         %span
-          = link_to 'Adauga poze pentru piscina', new_pool_path
+          = link_to 'Adauga poze piscina', new_pool_path
         %span
-          = link_to 'Sterge poze de la piscina', delete_pools_path
+          = link_to 'Sterge poze piscina', delete_pools_path
         %span
-          = link_to 'Adauga poze pentru restaurant', new_restaurant_path
+          = link_to 'Adauga poze restaurant', new_restaurant_path
         %span
-          = link_to 'Sterge poze de la restaurant', delete_restaurants_path
+          = link_to 'Sterge poze restaurant', delete_restaurants_path
         %span
-          = link_to 'Adauga poze pentru sala de evenimente', new_event_path
+          = link_to 'Adauga poze evenimente', new_event_path
         %span
-          = link_to 'Sterge poze de la sala de evenminete', delete_events_path
-          
+          = link_to 'Sterge poze evenminete', delete_events_path
+        %span
+          = link_to 'Testimoniale', testimonials_path
+
         = link_to 'Logout', destroy_admin_session_path, method: :delete, class: 'pull-right'
   #logo
     .inner
@@ -27,7 +29,7 @@
   #mainmenu-container
     %ul#mainmenu
       %li
-        = link_to 'Home', '/'
+        = link_to 'Acasa', '/'
       %li
         = link_to 'Piscina', pools_path
       %li
