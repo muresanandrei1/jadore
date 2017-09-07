@@ -11,11 +11,15 @@
         %span
           = link_to 'Sterge poze de la piscina', delete_pools_path
         %span
+          = link_to 'Adauga poze pentru restaurant', new_restaurant_path
+        %span
+          = link_to 'Sterge poze de la restaurant', delete_restaurants_path
+        %span
           = link_to 'Adauga poze pentru sala de evenimente', new_event_path
         %span
           = link_to 'Sterge poze de la sala de evenminete', delete_events_path
-        %span
-          = link_to 'Logout', destroy_admin_session_path, method: :delete, class: 'pull-right'
+          
+        = link_to 'Logout', destroy_admin_session_path, method: :delete, class: 'pull-right'
   #logo
     .inner
       %a{:href => "/"}
@@ -27,11 +31,11 @@
       %li
         = link_to 'Piscina', pools_path
       %li
-        = link_to 'Restaurant'
+        = link_to 'Restaurant', restaurants_path
       %li
         = link_to 'Sala de evenimente', events_path
       %li
         = link_to 'Booking'
       %li
-        = link_to 'Contact'
+        = link_to 'Contact', contacts_path
   #menu-btn

@@ -757,7 +757,7 @@ section.dark {
 }
 
 .side-bg .background-image {
-    background:url(../img/bg/bg-2.jpg);
+    background-image: image-url('bg/bg-2.jpg');
     background-position:50% 50%!important;
     background-size:cover!important;
     width:100%;
