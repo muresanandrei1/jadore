@@ -1,5 +1,5 @@
 class TestimonialsController < ApplicationController
-  before_action :authenticate_admin!, only: ['new', 'destroy', 'update', 'edit']
+  before_action :authenticate_admin!, only: ['new', 'destroy', 'update', 'edit', 'index']
   def show
     @testimonial = Testimonial.find(params[:id])
   end

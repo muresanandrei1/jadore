@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   devise_for :admins
 
+  as :admin do
+    get '/admin', to: 'devise/sessions#new'
+  end
+
   root 'main#index'
 
   resources :rooms
