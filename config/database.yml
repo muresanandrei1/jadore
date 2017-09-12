@@ -19,4 +19,4 @@ production:
   pool: 5
   database: jadore_production
   username: jadore
-  password: <%= ENV['JADORE_DATABASE_PASSWORD'] %>
+  password: jadore
