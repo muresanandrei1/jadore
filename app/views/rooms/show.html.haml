@@ -30,18 +30,18 @@
               %span /noapte
             %a.btn-border{:href => "#"} Rezerva Acum
     %hr/
-    .row
-      - @random_rooms.each do |random_room|
-        .col-md-6
-          .room-item.item
-            .overlay
-              = link_to random_room do
-                %h1
-                  = random_room.title
-              .desc
-                = random_room.description
-                .price
-                  = random_room.price
-                  %span Ron / night
-                = link_to 'Vedeti Detalii', random_room, class: 'btn btn-border'
-            = image_tag random_room.pictures.first.image.url(:medium)
+    -# .row
+    -#   - @random_rooms.each do |random_room|
+    -#     .col-md-6
+    -#       .room-item.item
+    -#         .overlay
+    -#           = link_to random_room do
+    -#             %h1
+    -#               = random_room.title
+    -#           .desc
+    -#             = random_room.description
+    -#             .price
+    -#               = random_room.price
+    -#               %span Ron / night
+    -#             = link_to 'Vedeti Detalii', random_room, class: 'btn btn-border'
+    -#         = image_tag random_room.pictures.first.image.url(:medium)
