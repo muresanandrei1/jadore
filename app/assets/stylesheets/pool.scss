@@ -12,7 +12,7 @@
 }
 
 .pool-heading {
-  color: #000;
+  color: #FFF;
   font-size: 58px;
   font-weight: bold;
   letter-spacing: 6px;
@@ -20,12 +20,12 @@
 }
 
 .pool-sub-heading {
-  color: #333;
+  color: #FFF;
   font-weight: lighter;
   font-family: inherit;
   font-size: 19px;
   letter-spacing: 3px;
-  background-color: #fff;
+  background-color: #edb83a;
   padding: 5px;
   padding-left: 10px;
 }
@@ -58,10 +58,20 @@
   margin-top: 80px;
 }
 
-.blue-text-background {
+.dark-blue-bg {
   background-color: #005879;
+  color: #fff;
+}
+
+.light-blue-bg {
+  background-color: #4fc1b9;
+  color: #fff;
+}
+
+.blue-text-background {
+  background-color: #FFF;
   padding: 25px;
-  color: #000;
+  color: #005879;
   letter-spacing: 2px;
   font-family: inherit;
   font-weight: bold;
@@ -75,7 +85,7 @@
     font-size: 16px;
     padding-left: 80px;
     padding-right: 20px;
-    color: #fff;
+    color: #edb83a;
     vertical-align: bottom;
   }
   &:before {
@@ -84,7 +94,7 @@
 }
 
 .pool-blue-section {
-  background-color: #005879;
+  background-color: #c3e3d4;
 }
 
 .pool-gallery {
@@ -139,10 +149,10 @@
 }
 
 .transparent-background {
-  background-color: rgba(255,255,255, 0.5);
+  background-color: rgba(237, 184, 58, 0.71);
   padding: 50px 30px;
   font-size: 25px;
   text-align: justify;
-  color: #000;
+  color: #FFF;
   line-height: 30px;
 }

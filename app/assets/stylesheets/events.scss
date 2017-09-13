@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 2300px;
+  height: 2000px;
 }
 
 .event-header-curtain {
@@ -23,7 +23,8 @@
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 680px;
+  height: 520px;
+  margin-top: 50px;
 }
 
 .text-event-wrapper {
@@ -38,7 +39,10 @@
     transform: translate(-50%, -50%);
     font-size: 70px;
     font-weight: bold;
-    color: #40064f;
+    color: #ffffff;
+    font-family: Carambola;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px #000;
   }
   p {
     font-size: 26px;
@@ -50,10 +54,10 @@
 
 .lights-background {
   background-image: image-url('events/lights.png');
-  background-size: 80%;
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: 80%;
   height: 1300px;
+  background-position: 50% 0%;
 }
 
 .gradient-overlay {
@@ -95,4 +99,12 @@
 
 .event-page .gallery-item {
   border: none;
+}
+
+.perdea {
+  height: 30%;
+}
+
+.top-space {
+  margin-top: 100px;
 }

@@ -7,3 +7,21 @@
   color: #fff;
   display: inline-block;
 }
+
+@font-face {
+	font-family: 'Carambola';
+	src:url('Carambola.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gabriola';
+	src:url('Gabriola.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font-family-gabriola {
+  font-family: Gabriola;
+}
