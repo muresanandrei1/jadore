@@ -5,7 +5,10 @@
         - @room.each do |room|
           .room-item-alt
             .col-md-5
-              = image_tag room.pictures.first.image.url(:medium)
+              -if room.pictures.first.present?
+                = image_tag room.pictures.first.image.url(:medium)
+              -else
+                = image_tag 'room/pic1.jpg'
             .col-md-5
               .desc
                 = link_to room_path(room) do
