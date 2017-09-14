@@ -156,3 +156,31 @@
   color: #FFF;
   line-height: 30px;
 }
+
+// Start media query
+
+@media (max-width: 480px) {
+  .pool-text {
+    font-size: 25px;
+  }
+  .blue-text-background {
+    font-size: 32px;
+    &:before {
+      padding-right: 20px;
+      padding-left: 0px;
+    }
+    &:after {
+      padding-right: 0px;
+      padding-left: 20px;
+    }
+  }
+  .blue-text-background2 {
+    font-size: 24px;
+  }
+  .pool-gallery {
+    transform: translateY(-100px);
+  }
+  .transparent-background p {
+    font-size: 16px;
+  }
+}
