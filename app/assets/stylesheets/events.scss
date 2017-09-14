@@ -108,3 +108,24 @@
 .top-space {
   margin-top: 100px;
 }
+
+@media (max-width: 480px) {
+  .perdea {
+    max-height: 250px;
+  }
+  .event-header-image {
+    background-position: top;
+    height: 185px;
+    background-size: 100%;
+    margin-top: 0;
+  }
+  .text-event-wrapper h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .top-event-background {
+    height: 1500px;
+  }
+
+
+}
