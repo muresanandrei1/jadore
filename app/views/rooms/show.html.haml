@@ -28,11 +28,11 @@
               = @room.price
               %span RON
               %span /noapte
-            %a.btn-border{:href => "#"} Rezerva Acum
+            = link_to 'Rezerva acum', @room.link, class: 'btn btn-border'
     %hr/
     .row
       - @random_rooms.each do |random_room|
-        -if random_room.pictures.first.present?
+        -if random_room.pictures.present?
           .col-md-6
             .room-item.item
               .overlay
