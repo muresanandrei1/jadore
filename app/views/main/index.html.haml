@@ -44,7 +44,7 @@
               =room.price
               %span RON/noapte
             = link_to 'Vezi Detalii', room_path(room.id), class: 'btn-border'
-            -# %a.btn-border Vezi Detalii
+
         - if room.pictures.present?
           = image_tag room.pictures.first.image.url(:medium)
 %section
@@ -106,6 +106,6 @@
         .clearfix
   .clearfix
 %section.call-to-action.text-center
-  %a.btn-big-border{:href => "#"}
+  = link_to 'https://www.booking.com/hotel/ro/j-39-adore-boutique.ro.html', class: 'btn btn-big-border' do
     Faceti
     o rezervare acum!

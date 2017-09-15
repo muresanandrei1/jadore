@@ -2,7 +2,49 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.restaurant-page .pool-gallery .owl-buttons .owl-prev,
-.restaurant-page .pool-gallery .owl-buttons .owl-next {
-  color: #000;
+.event-gallery {
+  margin-top: 50px;
+}
+
+.event-gallery .owl-buttons .owl-prev,
+  .event-gallery .owl-buttons .owl-next{
+    font-family: 'fontAwesome';
+    background: none !important;
+}
+
+.event-gallery .owl-buttons .owl-prev {
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  color: #000 !important;
+}
+
+.event-gallery .owl-buttons .owl-next {
+  position: absolute;
+  right: -5%;
+  top: 50%;
+  color: #000 !important;
+}
+
+.event-gallery .owl-buttons .owl-prev:before{
+    content: "\f0d9";
+    margin-right:10px;
+    font-size: 80px;
+}
+.event-gallery .owl-buttons .owl-next:after{
+    content: "\f0da";
+    margin-right:10px;
+    font-size: 80px;
+}
+
+.text-restaurant-wrapper {
+  font-size: 28px;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 100px;
+  p {
+    background-color: rgba(64, 6, 79, 0.8);
+    padding: 50px;
+    color: #FFF;
+  }
 }
