@@ -28,6 +28,11 @@ Rails.application.routes.draw do
 
   match '/contacts', to: 'contacts#new', via: 'get'
 
+  match '/piscina', to: 'pools#index', via: 'get'
+
+  match '/evenimente', to: 'events#index', via: 'get'
+  
+
   resources "contacts", only: [:new, :create]
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
