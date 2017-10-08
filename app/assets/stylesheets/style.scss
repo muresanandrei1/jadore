@@ -91,7 +91,7 @@ header #logo .inner {
 - - - - - - - - - - - - - - - - - - - - */
 #subheader {
     padding:120px 0;
-    background: top center no-repeat;
+    background: center center no-repeat;
     background-image: image-url('bg/bg-1.jpg');
     text-align:center;
     background-size: cover;
@@ -554,7 +554,8 @@ a.btn-custom:hover {
 }
 
 .icon-box .text {
-    padding-left:110px
+    padding-left: 110px;
+    padding-top: 50px;
 }
 
 /* heading */
