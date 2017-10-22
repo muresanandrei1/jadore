@@ -759,8 +759,8 @@ section.dark {
 }
 
 .side-bg .background-image {
-    background-image: image-url('bg/bg-2.jpg');
-    background-position:50% 50%!important;
+    background-image: image-url('testimonials.jpg');
+    background-position:50% 55%!important;
     background-size:cover!important;
     width:100%;
     height:100%;
@@ -1885,7 +1885,9 @@ FLEXSLIDER
     display:table;
     position:absolute;
     height:100%;
-    z-index:100
+    z-index:100;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .text-wrap .inner .mid {
@@ -2387,4 +2389,8 @@ footer nav {
   .pool-gallery {
     transform: translateY(0);
   }
+}
+
+.callbacks_nav {
+  background-image: image-url('themes.png');
 }
