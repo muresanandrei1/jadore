@@ -184,3 +184,15 @@
     font-size: 16px;
   }
 }
+
+@media (max-width: 1440px) {
+  .pool-text{
+    font-size: 22px;
+  }
+  .blue-text-background {
+    font-size: 22px;
+  }
+  .blue-text-background:before, .blue-text-background:after {
+    padding: 0 20px;
+  }
+}

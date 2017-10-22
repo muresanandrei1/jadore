@@ -42,7 +42,7 @@
   float: left;
   width: 100%;
   }
-  
+
 
 
 .callbacks {
@@ -65,6 +65,7 @@
   display: block;
   position: relative;
   z-index: 1;
+  max-height: 750px;
   height: auto;
   width: 100%;
   border: 0;
@@ -99,7 +100,7 @@
   text-decoration: none;
   height: 61px;
   width: 38px;
-  background: transparent url("../img/themes.png") no-repeat left top;
+  background: transparent no-repeat left top;
   outline: none !important;
   }
 
