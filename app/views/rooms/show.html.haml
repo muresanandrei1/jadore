@@ -24,10 +24,6 @@
                   - @room.facilities.split(',').each do |facility|
                     %li
                       = facility
-            .price
-              = @room.price
-              %span RON
-              %span /noapte
             = link_to 'Rezerva acum', @room.link, class: 'btn btn-border'
     %hr/
     .row
@@ -41,8 +37,5 @@
                     = random_room.title
                 .desc
                   = random_room.description
-                  .price
-                    = random_room.price
-                    %span Ron / noapte
                   = link_to 'Vedeti Detalii', random_room, class: 'btn btn-border'
               = image_tag random_room.pictures.first.image.url(:medium)

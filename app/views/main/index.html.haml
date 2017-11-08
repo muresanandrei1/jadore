@@ -28,9 +28,6 @@
               = room.title
           .desc
             = room.description
-            .price
-              =room.price
-              %span RON/noapte
             = link_to 'Vezi Detalii', room_path(room.id), class: 'btn-border'
 
         - if room.pictures.present?
