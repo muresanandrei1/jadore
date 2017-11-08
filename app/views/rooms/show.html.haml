@@ -37,5 +37,7 @@
                     = random_room.title
                 .desc
                   = random_room.description
+                  .price
+                    %span
                   = link_to 'Vedeti Detalii', random_room, class: 'btn btn-border'
               = image_tag random_room.pictures.first.image.url(:medium)
